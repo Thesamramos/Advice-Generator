@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --moz-animation: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: var(--DarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 15px;
+    padding: 0 20px;
+    margin: 10px;
+    margin-top: 20vh;
+    padding-bottom: 0;
+    height: 300px;
+    width: 100vw;
+    position: relative;
+}
+
+.container span {
+    color: var(--moz-animation);
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.container .advice {
+    color: var(--LightCyan);
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.container .divider {
+    width: 100%;
+    margin-top: 20px;
+}
+
+button {
+    background-color: var(--moz-animation);
+    padding: 20px;
+    border: none;
+    border-radius: 90px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%);
+    
+}
+
+button img {
+    height: 30px;
+}
+
+@media screen and (min-width: 1366px){
+    .container {
+        width: 500px;
+        height: 300px;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    button:hover {
+        box-shadow: 0px 0px 30px var(--moz-animation);
+    }
+
+}
